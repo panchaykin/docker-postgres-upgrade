@@ -12,6 +12,14 @@ RUN set -eux; \
 	apt-get update; \
 	apt-get install -y --no-install-recommends \
 		postgresql-13='13.12-1.pgdg120+1' \
+		postgresql-13-postgis-3 \
+        postgresql-13-postgis-3-scripts \
+        postgresql-13-first-last-agg \
+        postgresql-16-postgis-3 \
+        postgresql-16-postgis-3-scripts \
+        postgresql-16-first-last-agg \
+        libproj-dev \
+        gdal-bin \
 	; \
 	rm -rf /var/lib/apt/lists/*
 
